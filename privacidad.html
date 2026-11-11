@@ -10,25 +10,78 @@
 </head>
 <body>
   <h1>Política de privacidad de Datheke</h1>
-  <p>Datheke es una app personal de notas. No tiene servidores propios ni base de datos.</p>
-  <h2>Qué datos usa</h2>
+  <p>Datheke es una app personal de notas, gratuita, para la web, Android y Windows. No tiene servidores propios ni base de
+    datos: la app se comunica directo con los servicios de Google que tú autorizas. Última actualización: 10 de noviembre de 2026.</p>
+
+  <h2>Permisos de Google que pide</h2>
   <ul>
-    <li>Tus notas y libretas se guardan <strong>solo en tu propio Google Drive</strong>, en la carpeta privada de la app (permiso <code>drive.appdata</code>). La app no puede ver el resto de tu Drive.</li>
-    <li>Tu correo de Google se usa solo para mostrar con qué cuenta entraste.</li>
-    <li>El permiso de acceso de Google queda guardado en tu navegador para no pedirte entrar a cada rato.</li>
+    <li><code>drive.appdata</code> (obligatorio): guardar tus notas, libretas, fotos y ajustes en la carpeta privada de la app
+      dentro de tu Google Drive. Esa carpeta no aparece en tu lista de archivos, y Datheke no puede ver el resto de tu Drive.</li>
+    <li><code>drive.file</code>: solo los archivos que Datheke crea o que tú abres con ella. Son el respaldo semanal y las notas que
+      compartes, en la carpeta «Datheke – importante, no borrar» de «Mi unidad», y las notas que otra persona te compartió y tú
+      agregas. Datheke no ve tus demás archivos.</li>
+    <li><code>calendar.app.created</code> (opcional, solo si activas los recordatorios con Google Calendar): crear y cambiar un
+      calendario propio llamado «Datheke» con tus recordatorios. Datheke no ve tus otros calendarios.</li>
+    <li>Tu correo de Google: para mostrar con qué cuenta entraste y, en las apps, para nombrar la carpeta de la copia en el aparato.</li>
   </ul>
+
+  <h2>Qué guarda y dónde</h2>
+  <ul>
+    <li><strong>En tu Google Drive:</strong> tus notas y libretas (en la carpeta privada de la app), el respaldo semanal (se guardan
+      los dos últimos) y las notas que compartes. La carpeta privada y el respaldo guardan también las notas con clave
+      <strong>sin cifrar</strong>, protegidas por tu cuenta de Google, para que no las pierdas si olvidas la clave.</li>
+    <li><strong>En tu aparato:</strong> una copia de tus notas para usarlas sin internet (las notas con clave van cifradas), el
+      permiso de acceso de Google para no pedirte entrar a cada rato y tus preferencias. En las apps de Android y Windows, además,
+      una copia visible de tus notas, sin las de clave, en la carpeta Documentos/Datheke del aparato.</li>
+    <li>Si vinculas Gemini, tu clave de Gemini se guarda en la carpeta privada de la app en tu Drive, para que sirva en todos tus
+      aparatos.</li>
+  </ul>
+
   <h2>Qué no hace</h2>
   <ul>
-    <li>No envía tus datos a ningún servidor ni a terceros.</li>
-    <li>No vende datos, no muestra publicidad y no usa tus datos para entrenar inteligencia artificial.</li>
+    <li>No guarda tus notas en ningún lugar fuera de tu Google Drive y tus aparatos: Datheke no tiene servidores.</li>
+    <li>No vende datos, no muestra publicidad, no usa herramientas de análisis ni de rastreo y no usa tus datos para entrenar
+      inteligencia artificial.</li>
   </ul>
-  <p>El uso de la información recibida de las API de Google cumple la
+
+  <h2>Qué se envía a otros servicios, y solo cuando tú lo eliges</h2>
+  <ul>
+    <li><strong>Gemini (Google).</strong> Está apagado hasta que lo vinculas con tu propia clave gratis de Google AI Studio. Cuando
+      usas una de sus funciones, la app envía directo a la API de Gemini de Google: el texto seleccionado o el de la nota (para
+      resumir, corregir, mejorar, traducir, sacar tareas o lo que le pidas), el audio que grabas al dictar, o lo que le pides a la
+      calculadora junto con las líneas que va a calcular. Las notas y libretas marcadas como privadas no se envían, y si el texto
+      parece tener claves, cédulas o números de cuenta, la app te pregunta antes. En el plan gratis, Google puede usar y revisar lo
+      enviado para mejorar sus productos, según sus propias condiciones.</li>
+    <li><strong>«Enviar a IA».</strong> Cuando lo eliges en una nota, la app copia su texto (sin fotos) y abre Claude (Anthropic),
+      ChatGPT (OpenAI), Gemini (Google), otra IA que tú hayas agregado o el menú Compartir de tu aparato. Ese servicio recibe el
+      texto con tu propia cuenta y según sus propias condiciones. Si la nota es privada, la app te pregunta antes; si tiene clave,
+      te la pide.</li>
+    <li><strong>Notas compartidas.</strong> Cuando compartes una nota, Google Drive les da permiso a los correos que tú escribes y
+      les avisa por correo con un mensaje de Datheke.</li>
+    <li><strong>Enviar copia.</strong> El archivo de la nota va solo a donde tú lo mandes (WhatsApp, correo u otra app).</li>
+    <li>Las apps de Android y Windows le preguntan a GitHub si hay una versión nueva. En esa consulta no va ningún dato tuyo.</li>
+  </ul>
+
+  <h2>Uso limitado de los datos de Google</h2>
+  <p>El uso y la transferencia a cualquier otra app de la información recibida de las API de Google cumplen la
     <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos del Usuario de los Servicios de API de Google</a>,
-    incluidos los requisitos de Uso Limitado.</p>
-  <h2>Cómo quitar el acceso</h2>
-  <p>Puedes quitarle el acceso a la app cuando quieras en
-    <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+    incluidos los requisitos de Uso Limitado. Datheke usa esos datos solo para darte las funciones que ves en la app, solo los
+    envía a otros servicios cuando tú lo pides con una de las funciones de arriba, no los usa para publicidad, no los vende y
+    ninguna persona de Datheke puede leerlos.</p>
+
+  <h2>Cómo quitar el acceso y borrar tus datos</h2>
+  <ul>
+    <li>Quitar el acceso de Datheke a tu cuenta de Google:
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>En un aparato: en Ajustes, «Salir» borra la copia local de tus notas y la sesión. También puedes borrar los datos del sitio
+      en tu navegador o desinstalar la app; en Android y Windows, borra además la carpeta Documentos/Datheke.</li>
+    <li>En tu Drive: las notas de la carpeta privada se borran en Google Drive → Configuración → Administrar aplicaciones → Datheke
+      (puede aparecer como «Notas David») → «Eliminar datos de app ocultos». Así se borran todas y no se pueden recuperar. La
+      carpeta «Datheke – importante, no borrar» (respaldos y notas compartidas) se borra como cualquier carpeta.</li>
+    <li>En Google Calendar: borra el calendario «Datheke».</li>
+  </ul>
+
   <h2>Contacto</h2>
-  <p><a href="https://github.com/DavidGa93/datheke-publico/issues">github.com/DavidGa93/datheke-publico</a></p>
+  <p>Escríbenos en <a href="https://github.com/DavidGa93/datheke-publico/issues">github.com/DavidGa93/datheke-publico/issues</a>.</p>
 </body>
 </html>
