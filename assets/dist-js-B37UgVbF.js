@@ -1,0 +1,1 @@
+import{i as e}from"./index-BMcPQiK7.js";var t;(function(e){e[e.None=0]=`None`,e[e.TouchID=1]=`TouchID`,e[e.FaceID=2]=`FaceID`,e[e.Iris=3]=`Iris`})(t||={});async function n(){return await e(`plugin:biometric|status`)}async function r(t,n){return await e(`plugin:biometric|biometric_cipher`,{reason:t,...n})}export{r as biometricCipher,n as checkStatus};
