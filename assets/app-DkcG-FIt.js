@@ -1,1 +1,0 @@
-import{i as e,r as t}from"./index-AW02Lt0g.js";var n;(function(e){e.Nsis=`nsis`,e.Msi=`msi`,e.Deb=`deb`,e.Rpm=`rpm`,e.AppImage=`appimage`,e.App=`app`})(n||={});async function r(e){return t(`app`,`back-button`,e)}async function i(t=0){return e(`plugin:app|exit`,{code:t})}export{i as exit,r as onBackButtonPress};
