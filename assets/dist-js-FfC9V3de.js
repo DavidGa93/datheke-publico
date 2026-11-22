@@ -1,0 +1,1 @@
+import{i as e}from"./index-C9w_JYDp.js";async function t(t,n){await e(`plugin:sharekit|share_text`,{text:t,...n})}async function n(t,n){await e(`plugin:sharekit|share_file`,{url:t,...n})}export{n as shareFile,t as shareText};
